@@ -969,6 +969,186 @@ else:
     print("ok")
 
 
+a=[]
+for i in range(1500,2701):
+    if i%7==0 and i%5==0:
+        a.append(i)
+print(a)
+
+
+a=[i for i in range(1500,2701)if i%7==0 and i%5==0]
+print(a)
+
+
+
+# import random
+# a=random.randint(1,10)
+# b=0
+# while a!=b:
+#     b=int(input("enter a random number until you get right:"))
+# print("well guessed!")
+
+
+n=5
+for i in range(1,n+1):
+    for j in range(i):
+        print("*",end=" ")
+    print()
+for i in range(n-1,0,-1):
+    for j in range(i):
+        print("*",end=" ")
+    print()
+a="dinesh is my name"
+print(a[::-1])
+
+
+
+a=(1,2,3,4,5,6,7,8,9)
+e_n=[]
+o_n=[]
+e_c=0
+o_c=0
+for i in a:
+    if i%2==0:
+        e_c+=1
+        e_n.append(i)
+    else:
+        o_c+=1
+        o_n.append(i)
+print(e_n)
+print(o_n)
+print(e_c)
+print(o_c)
+a= [1452, 11.23, 1 + 2j, True, 'w3resource', (0, -1), [5, 12], {"class": 'V', "section": 'A'}]
+for i in a:
+    print(i,type(i))
+
+
+
+for i in range(6):
+    if i==3 or i==6:
+        continue
+    print(i)
+
+
+
+a=0
+print(a)
+b=1
+print(b)
+for i in range(1,9):
+    c=a+b
+    print(a+b)
+    a=b
+    b=c
+
+for i in range(1,51):
+    if i%3==0 and i%5==0:
+        print("fizzbuzz")
+    elif i%3==0:
+        print("fizz")
+    elif i%5==0:
+        print("buzz")
+    else:
+        print(i)
+
+a=3
+b=4
+a=[[i*j for j in range(b)]for i in range(a)]
+print(a)
+
+
+
+students=[]
+def add_student(name):
+    students.append(name)
+def display_students():
+    for student in students:
+        print(student)
+add_student("dinesh")
+add_student("reddy dino")
+display_students()
+
+
+# a=5
+# b=6
+# print(a>b)
+
+a=3
+b=10
+print(a>4 and b<20)  #  False and True
+print(a>2 or b<7)    #  True or False    T
+
+a=5
+b=10
+print(not b>200)  # not True
+
+
+a=10
+print(type(a))
+b=True
+print(type(b))
+c=1.2
+print(type(c))
+d=b+4j
+print(type(d))
+e="dinesh"
+print(type(e))
+
+a=10
+print(a)
+
+
+#list[]---------mutable
+#tuple()--------immutable
+#dictionary{}---mutable
+#set{}----------mutable
+#frozenset{}----immutable
+
+
+a=[1,3,'d',"reddy",2.43]
+print(type(a))
+
+
+
+b=(1,2,3,4,5,6)
+print(type(b))
+
+
+c={"name":"dinesh","age":24,"gender":"male"}
+print(type(c))
+
+
+
+a=[1,2,3,4,5]
+print(type(a))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
