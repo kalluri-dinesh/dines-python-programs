@@ -36,3 +36,5 @@ print(a.values())
 a.update(b.fromkeys('dino',20))
 print(a)
 print(a.setdefault('name'))
+
+

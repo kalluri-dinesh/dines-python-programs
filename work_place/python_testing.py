@@ -1183,8 +1183,8 @@ print(a)           #out put:-{1,2,3,4,6,7}
 # print(a[8:0:-1])
 
 #Write a program to print given number is a prime number or not.n
-a=4
-c=0
+# a=4
+# c=0
 # for i in range(1,a+1):
 #     if a%i==0:
 #         c+=1
@@ -1193,6 +1193,166 @@ c=0
 #     print(a,' is prime number')
 # else:
 #     print(a," is not prime number")
+
+#
+# a=['apple','banana','mango','orange']
+# for i in a:
+#     print(i)
+#
+#
+#
+for i in range(5):
+    print(i)
+a=[1,2,3,4,5,6,7,8,9]
+even_numbers=[]
+odd_numbers=[]
+e_c=0
+o_c=0
+for i in a:
+    if i%2==0:
+        e_c+=1
+        even_numbers.append(i)
+    else:
+        o_c+=1
+        odd_numbers.append(i)
+print(even_numbers)
+print(odd_numbers)
+print(e_c)
+print(o_c)
+# 1. Write a Python program to find those numbers which are divisible by 7 and multiples of 5,
+# between 1500 and 2700 (both included).
+a=[]
+for i in range(1500,2701):
+    if i%7==0 and i%5==0:
+        a.append(i)
+print(a)
+
+
+a=[i for i in range(1500,2701)if i%7==0 and i%5==0]
+print(a)
+
+
+import random
+a=random.randint(1, 10)
+b=0
+while a!=b:
+    b=int(input("Enter No."))
+print("Well Done")
+
+
+# import random
+# target_num, guess_num = random.randint(1, 10), 0
+# while target_num != guess_num:
+#     guess_num = int(input('Guess a number between 1 and 10 until you get it right : '))
+# print('Well guessed!')
+n=5
+for i in range(1,n+1):
+    for j in range(i):
+        print("*",end=" ")
+    print()
+for i in range(n-1,0,-1):
+    for j in range(i):
+        print("*",end=" ")
+    print()
+
+
+
+a="dinesh"
+print(a[::-1])
+
+
+a=(1,2,3,4,5,6,7,8,9)
+e_n=[]
+o_n=[]
+e_c=0
+o_c=0
+for i in a:
+    if i%2==0:
+        e_n.append(i)
+        e_c+=1
+    else:
+        o_c+=1
+        o_n.append(i)
+print(e_n)
+print(o_n)
+print(e_c)
+print(o_c)
+
+a= [1452, 11.23, 1+2j, True, 'w3resource', (0, -1), [5, 12], {"class":'V', "section":'A'}]
+for i in a:
+    print(i,type(i))
+
+
+
+for i in range(7):
+    if i==3 or i==6:
+        continue
+    print(i)
+
+a=0
+print(a)
+b=1
+print(b)
+for i in range(1,9):
+    c=a+b
+    print(c)
+    a=b
+    b=c
+
+
+for i in range(1,101):
+    if i%3==0 and i%5==0:
+        print("fizzbuzz")
+    elif i%3==0:
+        print("fizz")
+    elif i%5==0:
+        print("buzz")
+    else:
+        print(i)
+
+#Write a  Python program that takes two digits m (row) and n (column) as input and generates a
+# two-dimensional array. The element value in the i-th row and j-th column of the array should be i*j.
+# Note :
+# i = 0,1.., m-1
+# j = 0,1, n-1.
+
+# rows=int(input("enter rows:"))
+# columns=int(input("enter columns:"))
+# a=[i*j for i in range(columns)for j in range(rows)]
+# print(a)
+
+
+
+
+
+
+students=[]
+def add_student(name):
+    students.append(name)
+def add_students():
+    for student in students:
+        print(student)
+add_student("dinesh")
+add_student("reddy")
+add_students()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
